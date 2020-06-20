@@ -19,7 +19,7 @@ class App < Sinatra::Base
     end
     answer
   end
-  
+
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @sentence = params[:word1] + " " + params[:word2] + " " + params[:word3] + " " + params[:word4] + " " + params[:word5]
     "#{@sentence}."
@@ -40,10 +40,5 @@ class App < Sinatra::Base
       answer = (number1 / number2).to_s
     end
   end
-
-
-
-
-
 
 end
